@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HMS ONLINE SERVICES</title>
+</head>
+<body>
+
+{% extends 'webapp/mybase.html' %}
+{% block b %}
+{% load staticfiles %}
+
+<div class="jumbotron">
+<div class="row">
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/moula.jpeg' %}" alt="noimage">
+    <h2>Sir Dr.Moula</h2>
+    <h3>Founder Of The HMS Groups</h3>
+  </div>
+  <div class="col-lg-3 thumbnail"  style="margin:35px">
+    <img src="{% static 'images/hem.jpeg' %}" alt="noimage" style="height:320px">
+    <h2>B.Sai Hemanth </h2>
+    <h3>CEO Of The HMS Groups</h3>
+  </div>
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/sandeep.jpeg' %}" alt="noimage" style="height:320px">
+    <h2>J.Sandeep</h2>
+    <h3>President Of The HMS Groups</h3>
+  </div>
+</div>
+</div>
+
+<div style="background: #40e0d0 ">
+<marquee><div>
+    <h1 style="color:orange;font-size:20px;">FOUNDER OF THE HMS Groups:Sir Dr Moula</h1>
+    <h1 style="color:white;font-size:20px;">CEO OF THE HMS Groups:B.Sai Hemanth</h1>
+    <h1 style="color:green;font-size:20px;">PRESIDENT OF THE HMS Groups:J.Sandeep</h1>
+</div></marquee></div>
+{% endblock %}
+
+</body>
+</html>

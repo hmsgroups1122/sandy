@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends 'webapp/base.html' %}
+{% block a %}
+
+<div class="jumbotron">
+    <h2>PLEASE LOGIN (or) SIGNUP TO SEE OUR SERVICES</h2>
+
+  <center>
+  <a class="btn btn-primary btn-lg" href="/accounts/login" role="button">LOGIN Again</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a class="btn btn-primary btn-lg" href="/registration" role="button">SIGNUP</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a class="btn btn-primary btn-lg" href="/" role="button">GO TO Home</a>
+  </center>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

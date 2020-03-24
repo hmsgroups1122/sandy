@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'webapp/base.html' %}
+{% block a %}
+<div>
+<span style="color:red;font-size:40px;">WARNING 1:</span>
+<span style="color:red;font-size:25px;">User Name and password are must and should different:</span>
+</div>
+<div>
+<span style="color:red;font-size:40px;">WARNING 2:</span>
+<span style="color:red;font-size:25px;">Don't Use Space in User Name</span>
+<span style="color:red;font-size:20px;">ex:(john david),ex2:(sara wilson)</span>
+</div>
+<div>
+<span style="color:green;font-size:40px;">SUCCESS:</span>
+<span style="color:green;font-size:20px;">ex1:(john),ex2:(sara)</span>
+</div>
+<div style="border:2px solid green;margin:30px auto;width:800px;height:360px;padding:30px">
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <center><button type="submit" class="btn btn-danger">Registration</button></center>
+</form>
+</div>
+{% endblock %}
+</body>
+</html>

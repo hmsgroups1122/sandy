@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+{% extends 'webapp/base.html' %}
+{% block a %}
+<h1>LOGIN HERE:</h1>
+<div style="border:2px solid;margin:10px auto;padding-left:10px;width:500px;background:#ccc;height:300px;">
+<form method="post">
+<marquee style="color:red;font-size:25px;">PLEASE ENTER YOUR USERNAME AND PASSWORD</marquee>
+    <p></p>
+    {{form.as_p}}
+    {% csrf_token %}
+    <center><button type="submit" class="btn btn-success">LOGIN</button></center>
+</form>
+</div>
+{% endblock %}
+</body>
+</html>

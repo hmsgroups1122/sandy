@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends 'webapp/base.html' %}
+{% block a %}
+<marquee style="color:red;font-size:25px;">OUR OFFICE INFORMATION</marquee>
+
+<div class="jumbotron"><h1>New Delhi:</h1><p>New Delhi is an urban district of Delhi which serves as the capital of India and seat of all three branches of the Government of India. The foundation stone of the city was laid by Emperor George V during the Delhi Durbar of 1911. It was designed by British architects, Sir Edwin Lutyens and Sir Herbert Baker </p></div>
+<div class="jumbotron"><h1>Hyderabad</h1><p>Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital. The Charminar, a 16th-century mosque whose 4 arches support towering minarets, is an old city landmark near the long-standing Laad Bazaar. </p></div>
+<div class="jumbotron"><h1>Chennai</h1><p> Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church.</p></div>
+
+
+<div class="jumbotron">
+    <h1>OUR OFFICE INFORMATION:</h1>
+<table class="table">
+  <tr>
+    <th style="color:white;background:orange">NEW DELHI</th>
+    <th style="color:white;background:orange">HYDERABAD</th>
+    <th style="color:white;background:orange">CHENNAI</th>
+  </tr>
+  <tr style="color:brown;">
+    <td>(P): 011-82511 2121</td>
+    <td>(P): 040-5532 6666</td>
+    <td>(P): 044-8977 0990</td>
+  </tr>
+  <tr style="color:brown;">
+    <td>(P): 011-986 4455</td>
+    <td>(P): 040-1247 2222</td>
+    <td>(P): 044-1254 9898</td>
+  </tr>
+  <tr style="color:brown;">
+    <td>(M):+91-8996552233 </td>
+    <td>(M):+91-9898989866 </td>
+    <td>(M):+91-9886565656 </td>
+  </tr>
+</table>
+</div>
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>HMS Groups</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="{% static 'css/head.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-light" style="background-color: #0066ff;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/hmsg"><span style="color:white">HMS ONLINE SERVICES</span></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/shop"><span style="color:black;font-size:20px;">SHOPING</span></a></li>
+      <li><a href="/food"><span style="color:black;font-size:20px;">FOOD ORDER</span></a></li>
+      <li><a href="/hotel"><span style="color:black;font-size:20px;">BOOKING HOTELS</span></a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/accounts/logout"><span style="color:black;font-size:20px;">LOGOUT</span></a></li>
+    </ul>
+
+  </div>
+</nav>
+{% block b %}
+{% endblock %}
+
+  <nav class="navbar navbar-light" style="background-color: #0066ff;">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="https://www.facebook.com" target="_blank" style="color:black;font-size:20px;">FACEBOOK</a></li>
+      <li><a href="https://www.twitter.com" target="_blank" style="color:black;font-size:20px;">TWITTER</a></li>
+      <li><a href="https://www.google.com" target="_blank" style="color:black;font-size:20px;">GOOGLE</a></li>
+      <li><a href="https://www.linkedin.com" target="_blank" style="color:black;font-size:20px;">LinkedIn</a></li>
+    </ul>
+</nav>
+</body>
+</html>

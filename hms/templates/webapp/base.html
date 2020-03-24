@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>HMS Groups</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="{% static 'css/head.css' %}" rel="stylesheet">
+</head>
+<body>
+<img src="{% static 'images/m.jpeg' %}" alt="NoImage" style="height:130px;width:300px;float:left;margin:0px">
+<table style="float:right">
+  <tr>
+    <th style="color:white;background:orange">NEW DELHI</th>
+    <th style="color:white;background:orange">HYDERABAD</th>
+    <th style="color:white;background:orange">CHENNAI</th>
+  </tr>
+  <tr style="color:brown;">
+    <td>(P): 011-82511 2121</td>
+    <td>(P): 040-5532 6666</td>
+    <td>(P): 044-8977 0990</td>
+  </tr>
+  <tr style="color:brown;">
+    <td>(P): 011-986 4455</td>
+    <td>(P): 040-1247 2222</td>
+    <td>(P): 044-1254 9898</td>
+  </tr>
+  <tr style="color:brown;">
+    <td>(M):+91-8996552233 </td>
+    <td>(M):+91-9898989866 </td>
+    <td>(M):+91-9886565656 </td>
+  </tr>
+</table>
+<nav class="navbar navbar-inverse" style="clear:both">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><b style="color:orange">HMS Groups</b></a>
+    </div>
+    <ul class="nav navbar-nav navbar">
+      <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/cont">CONTRACT</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="/registration">SIGNUP</a></li>
+      <li class="active"><a href="/accounts/login">LOGIN</a></li>
+      <li class="active"><a href="/servi">Services</a></li>
+    </ul>
+  </div>
+</nav>
+{% block a %}
+{% endblock %}
+  <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
+      <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
+      <li><a href="https://www.google.com" target="_blank">GOOGLE</a></li>
+      <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+</nav>
+</body>
+</html>

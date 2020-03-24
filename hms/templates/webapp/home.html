@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+      <style>
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+            }
+      </style>
+</head>
+<body>
+{% extends 'webapp/base.html' %}
+{% block a %}
+{% load staticfiles %}
+<marquee style="color:red;font-size:25px;background:#ccc">WELCOME TO HMS GROUPS OF WORLDS</marquee>
+<div class="jumbotron" align="center">
+  <div><b style="font-size:30px">ABOUT THE HMS Groups:</b></div>
+  <p align="justify" style="color:blue">HMS Group is a dynamically growing diverse corporation that combines leading manufacturing
+(pumps, compressors, oil&gas equipment), engineering and construction companies.Our markets are oil & gas,
+nuclear and thermal power generation, water supply & utilities,metallurgy etc.EPC projects for oil & gas
+and water industry is the strategic direction of the HMS Group.</p>
+</div>
+<div class="jumbotron">
+<div class="row">
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/moula.jpeg' %}" alt="noimage">
+    <h2>Sir Dr.Moula</h2>
+    <h3>Founder Of The HMS Groups</h3>
+  </div>
+  <div class="col-lg-3 thumbnail"  style="margin:35px">
+    <img src="{% static 'images/hem.jpeg' %}" alt="noimage" style="height:320px">
+    <h2>B.Sai Hemanth </h2>
+    <h3>CEO Of The HMS Groups</h3>
+  </div>
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/sandeep.jpeg' %}" alt="noimage" style="height:320px">
+    <h2>J.Sandeep</h2>
+    <h3>President Of The HMS Groups</h3>
+  </div>
+</div>
+</div>
+<div class="jumbotron">
+  <h1>Competitive Analysis:</h1>
+  <div>
+<div class="row">
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/office2JPG.jpg' %}" alt="noimage" style="height:320px">
+    <h2>NEW DELHI</h2>
+    <h3>Estimated Employees 5,000</h3>
+  </div>
+  <div class="col-lg-3 thumbnail"  style="margin:35px">
+    <img src="{% static 'images/office.jpg' %}" alt="noimage" style="height:320px">
+    <h2> BANGALORE</h2>
+    <h3>Estimated Employees 1500</h3>
+  </div>
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/office1.jpg' %}" alt="noimage" style="height:320px">
+    <h2>HYDERABAD</h2>
+    <h3>Estimated Employees 900</h3>
+  </div>
+</div>
+</div>
+<div>
+    <h1>OIL AND GAS BUSINESS:</h1>
+<div class="row">
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/oil.jpg' %}" alt="noimage" style="height:320px">
+    <h2>DUBAI</h2>
+    <h3>Trading oil</h3>
+  </div>
+  <div class="col-lg-3 thumbnail"  style="margin:35px">
+    <img src="{% static 'images/oil2.jpg' %}" alt="noimage" style="height:320px">
+    <h2>JAPAN</h2>
+    <h3>TRADING GAS</h3>
+  </div>
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/oil3.jpg' %}" alt="noimage" style="height:320px">
+    <h2>China</h2>
+    <h3>Trading GAS</h3>
+  </div>
+</div>
+</div><div>
+<div class="row">
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/buil2.jpg' %}" alt="noimage" style="height:320px">
+    <h2>DUBAI</h2>
+    <h3>RELATED TO HOTEL`S</h3>
+  </div>
+  <div class="col-lg-3 thumbnail"  style="margin:35px">
+    <img src="{% static 'images/buldi.jpg' %}" alt="noimage" style="height:320px">
+    <h2>USA </h2>
+    <h3>RELATED TO CONSTRUCTION</h3>
+  </div>
+  <div class="col-lg-3 thumbnail" style="margin:35px">
+    <img src="{% static 'images/hdd.jpg' %}" alt="noimage" style="height:320px">
+    <h2>JAPAN</h2>
+    <h3>RELATED MANIFACTURE PUMPS</h3>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
